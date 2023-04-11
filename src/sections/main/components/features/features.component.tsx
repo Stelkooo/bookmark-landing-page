@@ -1,8 +1,8 @@
-import Radio from '@/components/radio/radio.component';
+import Slider from './components/slider/slider.component';
 
 export default function Features() {
   return (
-    <div>
+    <div className="grid gap-y-[4.5rem]">
       <div className="grid gap-y-10">
         <div>
           <h2 className="mb-4">Features</h2>
@@ -12,11 +12,7 @@ export default function Features() {
             can access them on the go.
           </p>
         </div>
-        <div className="grid text-center text-base tracking-wide text-navy">
-          <Radio value="Simple Bookmarking" />
-          <Radio value="Speedy Searching" />
-          <Radio value="Easy Sharing" />
-        </div>
+        <Slider />
       </div>
     </div>
   );
