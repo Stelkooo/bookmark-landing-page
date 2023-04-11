@@ -1,3 +1,4 @@
+import BrowserCards from './components/browser-cards/browser-cards.component';
 import Slider from './components/slider/slider.component';
 
 export default function Features() {
@@ -13,6 +14,18 @@ export default function Features() {
           </p>
         </div>
         <Slider />
+      </div>
+      <div className="grid gap-y-10">
+        <div>
+          <h2 className="mb-4">Download the extension</h2>
+          <p>
+            We&apos;ve got more browsers in the pipeline. Please do let us know
+            if you&apos;ve got a favourite you&apos;d like us to prioritize.
+          </p>
+        </div>
+        <div>
+          <BrowserCards />
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ type Props = {
 
 export default function Button({ children, color }: Props) {
   const classNames: string[] = [
-    'rounded-md px-4 py-[10px] font-medium shadow-md whitespace-nowrap',
+    'rounded-md px-4 py-[10px] font-medium shadow-md whitespace-nowrap text-sm',
   ];
   switch (color) {
     case 'blue':
