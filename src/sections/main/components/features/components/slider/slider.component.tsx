@@ -41,16 +41,19 @@ export default function Slider() {
         <Radio
           value="Simple Bookmarking"
           id={1}
+          currentSlideId={currentSlideId}
           setCurrentSlideId={setCurrentSlideId}
         />
         <Radio
           value="Speedy Searching"
           id={2}
+          currentSlideId={currentSlideId}
           setCurrentSlideId={setCurrentSlideId}
         />
         <Radio
           value="Easy Sharing"
           id={3}
+          currentSlideId={currentSlideId}
           setCurrentSlideId={setCurrentSlideId}
         />
       </div>
