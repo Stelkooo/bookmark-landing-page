@@ -5,7 +5,6 @@ type Props = {
   id: number;
   currentSlideId: number;
   setCurrentSlideId: Dispatch<SetStateAction<number>>;
-  defaultChecked?: boolean;
 };
 
 export default function Radio({
@@ -13,7 +12,6 @@ export default function Radio({
   id,
   setCurrentSlideId,
   currentSlideId,
-  defaultChecked,
 }: Props) {
   return (
     <label
@@ -34,7 +32,3 @@ export default function Radio({
     </label>
   );
 }
-
-Radio.defaultProps = {
-  defaultChecked: false,
-};
