@@ -4,6 +4,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}',
+    './src/sections/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors: {
@@ -11,6 +12,7 @@ module.exports = {
       red: '#FA5959',
       navy: '#242A45',
       grey: '#9194A2',
+      white: '#ffffff',
     },
   },
   plugins: [],
