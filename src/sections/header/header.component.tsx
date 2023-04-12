@@ -9,15 +9,19 @@ import MobileMenu from '@/components/mobile-menu/mobile-menu.component';
 
 export default function Header() {
   const [menu, menuToggle] = useToggle(false);
-  if (menu) {
-    return <MobileMenu menuToggle={menuToggle} />;
-  }
   return (
-    <header className="flex justify-between px-8 py-10">
-      <div>
-        <Image src={BookmarkLogo} alt="Bookmark Logo" />
-      </div>
-      <Navigation menuToggle={menuToggle} />
-    </header>
+    <>
+      <header
+        className={`flex justify-between px-8 py-10 ${
+          menu ? 'invisible' : 'visible'
+        }`}
+      >
+        <div>
+          <Image src={BookmarkLogo} alt="Bookmark Logo" />
+        </div>
+        <Navigation menuToggle={menuToggle} />
+      </header>
+      {menu && <MobileMenu menuToggle={menuToggle} />}
+    </>
   );
 }
